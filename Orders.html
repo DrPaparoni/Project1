@@ -1,0 +1,100 @@
+<!--
+
+Original Author: Eric Walter
+Date Created: 8/28/2019
+Version: 4
+Date Last Modified: 2/7/2020
+Modified by: Eric Walter
+Modification log: Added social media links
+added favicons 
+added title and description
+changed name to "Orders"
+
+added font styles
+This is the final version
+
+added link to admin page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta name="description" content="Premier Photo Productions, a Boise Idaho local company. We have affordable rates for all our photographs.">
+    <title>Contact Us</title>
+<!-- font style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+<!-- External Style Sheet -->
+    <link href="css/styles.css" rel="stylesheet" media="screen"/>
+    <link href="css/print.css" rel="stylesheet" media="print"/>   
+    
+<!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<!-- Main Body-->
+<body>
+
+    <nav class="horizontal" id="links">
+        <a id="navicon" href="#"><img src="images/navicon.png"/></a>
+        <ul>
+            <li><a href="Landing.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Orders.html">Orders</a></li>
+            <li><a href="login.php">Admin</a></li>
+        </ul>
+    </nav>
+    <h1>Book a Photographer</h1>
+
+<!--    Contact Form     -->
+
+    <form id="contact" action="thankyou.php" method="post" name="form1">
+        <fieldset id="custInfo">
+            <legend>Order our services</legend>
+
+            <div class="formRow">
+                <label for="name">Name:</label>
+                <input type="text" name="custName" id="name" placeholder="First and Last name" required>
+            </div>
+
+            <div class="formRow">
+                <label for="phone">Phone number:</label>
+                <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+            </div>
+
+            <div class="formRow">
+                    <label for="mail">E-Mail:</label>
+                    <input name="custEmail" id="mail" type="email" required/>
+                </div>
+
+            <div class="formRow">
+                <label for="subSpin">How many subjects will be photographed?</label>
+                <input name="subNum" id="subSpin" type="number" value="1" step="1" min="1" max="10">
+            </div>
+
+            <div class="formRow">
+                <label for="rangeBox">How many hours would you like my services?</label>
+                1
+                <input name="hourRate" id="rangeBox" type="range" value="2" step="1" min="1" max="3">
+                3
+            </div>
+        </fieldset>        
+
+        <div id="buttons">
+            <input type="submit" value="Submit order" />
+            <input type="reset" value="Cancel" />
+        </div>
+    </form>
+
+    <footer>
+        &#169; Premier Photo Productions. <br>
+        This website is for educational purposes and has no affiliation with any company.<br/><br/>
+        <a href="https://instagram.com/" target="_blank"><img src="images/iconmonstr-instagram-1-48.png" alt="social icon for instagram"></a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="https://www.twitter.com/" target="_blank"><img src="images/iconmonstr-twitter-3-48.png" alt="social icon for twitter"></a>
+    </footer>
+</body>

@@ -1,0 +1,81 @@
+<!--
+
+Original Author: Eric Walter
+Date Created: 8/28/2019
+Version: 4
+Date Last Modified: 2/7/2020
+Modified by: Eric Walter
+Modification log: Added social media links
+added favicons 
+added title and description
+added video link
+
+tried adding bootstrap carousel but removed for breaking the rest of my css
+added font style sheet
+
+added link to admin page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta name="description" content="Premier Photo Productions, a Boise Idaho local company. We have affordable rates for all our photographs.">
+    <title>Photo Gallery</title>
+<!-- font style -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+<!-- External Style Sheet -->
+    <link href="css/styles.css" rel="stylesheet" media="screen"/>
+    <link href="css/print.css" rel="stylesheet" media="print"/>   
+    
+<!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+</head>
+<!-- Main Body-->
+<body>
+
+    <nav class="horizontal" id="links">
+        <a id="navicon" href="#"><img src="images/navicon.png"/></a>
+        <ul>
+            <li><a href="Landing.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Orders.html">Orders</a></li>
+            <li><a href="login.php">Admin</a></li>
+        </ul>
+    </nav>
+    <h1>Gallery</h1>
+
+    <p>Below is our gallery. We will periodically add more photos or videos in the future.<br/>
+    <br/>If you would like to order our services check our <a href="About.html">about</a> page for prices
+    and go to our <a href="Orders">orders</a> page to place an order.
+    </p>
+
+    <div class="row">
+        <div class="column">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tI6hBuhTd2M" frameborder="0" allow="accelerometer; 
+            autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="column">
+            <img src="images/woman.png" alt="Women in rain">
+        </div>
+        <div class="column">
+            <img src="images/jumping.png" alt="Jumping at the beach">
+        </div>
+        <div class="column">
+                <img src="images/kayak.png" alt="Woman kayaking">
+            </div>
+    </div>
+    
+    <footer>
+        &#169; Premier Photo Productions. <br>
+        This website is for educational purposes and has no affiliation with any company.<br/><br/>
+        <a href="https://instagram.com/" target="_blank"><img src="images/iconmonstr-instagram-1-48.png" alt="social icon for instagram"></a>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="https://www.twitter.com/" target="_blank"><img src="images/iconmonstr-twitter-3-48.png" alt="social icon for twitter"></a>
+    </footer>
+</body>

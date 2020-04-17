@@ -1,0 +1,354 @@
+/*
+
+Original Author: Eric Walter
+Date Created: 8/20/2019
+Version: 4 final
+Date Last Modified: 9/13/2019
+Modified by: Eric Walter
+Modification log: Fixed Navbar placement
+added background image to all sizes 
+added table stylings
+added form stylings
+
+added text link decoration
+
+adjusted various font sizes for readability
+added new fonts to P and H tags
+This is the final version
+added style for employee page
+*/
+
+
+/*Body Styles*/
+
+body{
+    background-color: rgba(191, 114, 194, 0.589); 
+    font-family: Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 5%;
+    font-size: 1.2em;
+    color: white;
+    background-color: rgba(46, 51, 45, 0.418);
+}
+
+p a{
+    color: white;
+}
+
+p a:visited{
+    color: rgb(119, 190, 119);
+}
+
+p a:hover {
+    color: rgb(58, 87, 44)
+}
+
+/*background style*/
+    
+html{
+    background: url(../images/september-in-the-forest.jpg);
+}
+
+/*Header Styles*/
+
+h1{
+    clear: both;
+    color: white;
+    text-shadow: green 4px 5px 6px;
+    text-align: center;    
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    text-shadow: green 4px 5px 6px;
+}
+
+/*Nav Styles*/
+
+nav#links a:link, nav#links a:visited{
+    color: rgb(119, 190, 119);
+}
+
+nav#links a:hover, nav#links a:active{
+    color: rgb(58, 87, 44);
+}
+
+nav#links ul li{
+    background-color: rgb(191, 114, 194);
+    display: inline-block;
+    text-align: center;
+    width: 15%;
+    padding: 12px;
+    border: 3px dashed rgb(119, 190, 119)
+}
+
+nav#links ul li a{
+    color: white;
+    display: block;
+    height: 2.5em;
+    text-align: center;
+    line-height: 2.5em;
+}
+
+nav#links a:link, nav#links a:visited {
+	color: white;
+}
+
+/*Footer Style*/
+footer{
+   position: relative;
+   bottom: 0;
+   text-align: center;
+}
+
+/*Table Styles*/
+
+table.prices{
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
+}
+
+table.prices thead{
+    background: rgb(119, 190, 119);
+    color: white;
+    border-bottom: 1px solid black;
+}
+
+table.prices .highlight td:nth-child(1){
+    color: white;
+    background: black;
+}
+
+table.prices tr:nth-child(even) {
+    background: rgb(119, 190, 119)
+}
+
+table.prices tr:nth-child(odd){
+    background: rgb(191, 114, 194);
+}
+
+/* Form Styles */
+
+form{
+    text-align: center;
+}
+
+form#contact {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding: 10px;
+    margin: 10px;
+}
+
+form#contact > fieldset{
+    border-radius: 20px;
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    background: rgb(119, 190, 119)
+}
+
+div.formRow{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 10px 10px; 
+}
+
+div.formRow > * {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+}
+
+/*Legend Styles*/
+
+legend{
+    background-color: rgb(191, 114, 194);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*Spinner Style*/
+
+div.formRow > input#subSpin{
+    -webkit-flex: 0 0 50px;
+    flex: 0 0 50px;
+}
+
+/*form buttons styles*/
+
+div#buttons{
+    text-align: center;
+    width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 15px;
+}
+
+/*Validation Styles*/
+
+input:focus, select:focus, textarea:focus {
+    background-color: rgb(220, 225, 220);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid{
+    background: rgb(220, 225, 220) url(../images/valid.png) bottom right/contain no-repeat;
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid{
+    background: rgb(191, 114, 194) url(../images/invalid.png) bottom right/contain no-repeat;
+}
+
+/*gallery styles*/
+
+.column{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*=================================
+ Mobile Styles: 0px to 480 px
+ ==================================
+*/
+@media only screen and (max-width: 480px){
+    
+    /*background styles*/
+
+    html{
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /*body styles*/
+
+    p{
+        font-size: 2em;
+    }
+
+    /*header styles*/
+
+    h1{
+        font-size: 60px;
+    }
+    
+    /*Nav styles*/
+
+    a#navicon {
+        display: block;
+        padding-left: 10%;
+        padding-top: 5%
+    }
+
+    nav.horizontal ul{
+        display: none;
+    }
+
+    a#navicon:hover+ul, nav.horizontal ul:hover {
+        display: block;
+        font-size: 40px
+    }
+
+    /*footer styles*/
+
+    footer{
+        font-size: 30px;
+        padding-top: 5%;
+    }
+
+    /*form styles*/
+
+    form#contact{
+        font-size: 2em;
+    }
+
+    input{
+        font-size: 1.5em;
+    }
+
+    option{
+        font-size: 1.5em;
+    }
+}
+/*=================================
+  Tablet Styles: 481px and greater
+  =================================
+*/
+@media only screen and (min-width: 481px){
+
+    /* Body Styels */
+
+    p{
+        font-size: 1.5em;
+    }
+
+    /*Nav styles*/
+
+    a#navicon{
+        display: none;
+    }
+    nav.horizontal ul{
+        display: block;
+        font-size: 1.5em;
+    }
+    nav#links a:hover, nav#links a:active {
+        background-color: rgb(46, 51, 45);
+    }
+    /*Header style*/
+
+    h1{
+        padding-top: 5%;
+        font-size: 55px;
+    }
+
+    footer{
+        padding-top: 5%;
+        font-size: 25px;
+    }
+}
+    
+/*==================================
+  Desktop Styles: 769px and greater
+  ==================================
+*/
+
+@media only screen and (min-width: 769px){
+        
+    h1{
+        padding-top: 5%;
+    }
+}
